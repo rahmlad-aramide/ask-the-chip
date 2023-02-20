@@ -1,5 +1,5 @@
 import React from 'react'
-import { Header, Navbar, WhyJoining } from '../components'
+import { ConnectWithFounders, Header, Navbar, WhyJoining } from '../components'
 
 const Landing = () => {
   return (
@@ -7,6 +7,7 @@ const Landing = () => {
         <Navbar />
         <Header />
         <WhyJoining />
+        <ConnectWithFounders />
     </div>
   )
 }
