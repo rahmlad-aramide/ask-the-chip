@@ -12,7 +12,7 @@ const Navbar = () => {
   const pathname = window.location.pathname;
   console.log(pathname);
   return (
-    <nav className={`w-full transition duration-500 flex justify-center h-fit`}>
+    <nav className={`w-full mx-auto lg:px-auto sm:px-20 transition duration-500 flex justify-center h-fit`}>
     <div className={`flex w-full fixed md:static max-w-[1200px] mx-auto justify-between transition duration-500 backdrop-blur h-16 px-4 md:px-0 z-20`}>
         <div className='flex my-auto'>
             <Link to='/' className={``}>
@@ -21,7 +21,7 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Nav */}
-        <div className='hidden md:flex font-body my-auto'>
+        <div className='hidden md:flex font-body my-auto items-center justify-between w-full max-w-[500px]'>
             <NavLink to="/" end className={({isActive}) =>(isActive ? 'px-4 underline decoration-2 underline-offset-4' : 'px-4 hover:underline decoration-2 underline-offset-4')}>Home</NavLink>
             <NavLink to='/about' className={({isActive}) =>(isActive ? 'px-4 underline decoration-2 underline-offset-4' : 'px-4 hover:underline decoration-2 underline-offset-4')}>About us</NavLink>
             <NavLink to='/discover' className={({isActive}) =>(isActive ? 'px-4 underline decoration-2 underline-offset-4' : 'px-4 hover:underline decoration-2 underline-offset-4')}>Discover</NavLink>
