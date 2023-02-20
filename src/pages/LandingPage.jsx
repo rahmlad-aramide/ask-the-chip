@@ -1,11 +1,12 @@
 import React from 'react'
-import { Header, Navbar } from '../components'
+import { Header, Navbar, WhyJoining } from '../components'
 
 const Landing = () => {
   return (
     <div>
         <Navbar />
         <Header />
+        <WhyJoining />
     </div>
   )
 }

@@ -9,11 +9,13 @@ const Navbar = () => {
   const showMenu = () => {
     navRef.current.classList.toggle('translate-x-[100%]');
   }
-  const pathname = window.location.pathname;
-  console.log(pathname);
+  // const pathname = window.location.pathname;
+  // console.log(pathname);
   return (
     <nav className={`w-full mx-auto lg:px-auto sm:px-20 transition duration-500 flex justify-center h-fit`}>
     <div className={`flex w-full fixed md:static max-w-[1200px] mx-auto justify-between transition duration-500 backdrop-blur h-16 px-4 md:px-0 z-20`}>
+        
+        {/* Brand Logo */}
         <div className='flex my-auto'>
             <Link to='/' className={``}>
                 <img src={logo} alt='ask the chip' />

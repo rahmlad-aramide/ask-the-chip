@@ -6,7 +6,8 @@ import header from './../assets/images/header.svg'
 const Header = () => {
   return (
     <div>
-      <section className="flex justify-center items-center flex-col min-h-screen">
+      <section className="flex justify-center items-center flex-col min-h-screen">        
+      <div className="flex justify-center items-center flex-col my-10">
         <h1 className="font-bold text-[64px] text-center max-w-[32ch] leading-[82px] my-8">Welcome to our Community of Entrepreneurs</h1>
         <h2 className="text-[20px] max-w-[51ch] text-center mb-8">
           And indeed the worst of my faults was a certain impatient gaiety of
@@ -15,6 +16,7 @@ const Header = () => {
         </h2>
         <div>
             <Button path='sign-in' title='Sign In' px='12px' />
+        </div>
         </div>
         <div>
           <img src={header} alt="Header" />
