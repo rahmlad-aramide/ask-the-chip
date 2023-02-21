@@ -1,5 +1,6 @@
 import React from 'react'
-import { ConnectWithFounders, Header, Navbar, WhyJoining } from '../components'
+import { ConnectWithFounders, ConnectWithProviders, Footer, Header, Navbar, WhyJoining } from '../components'
+import Testimonial from '../components/Testimonial'
 
 const Landing = () => {
   return (
@@ -8,6 +9,9 @@ const Landing = () => {
         <Header />
         <WhyJoining />
         <ConnectWithFounders />
+        <ConnectWithProviders />
+        <Testimonial />
+        <Footer />
     </div>
   )
 }

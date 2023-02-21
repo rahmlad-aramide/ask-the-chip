@@ -1,31 +1,73 @@
 // import Swiper core and required modules
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import { Navigation, Pagination } from "swiper";
 
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/autoplay";
+import "swiper/css/free-mode";
 
+//eslint-disable-next-line
 export default () => {
   return (
     <Swiper
       // install Swiper modules
-      modules={[Navigation, Pagination, Scrollbar, A11y]}
-      spaceBetween={50}
+      modules={[Navigation, Pagination]}
+      spaceBetween={20}
       slidesPerView={3}
-      navigation
+      centeredSlides={true}
+      autoplay={{
+        "delay": 2500,
+        "disableOnInteraction": false,
+      }}
+      allowTouchMove={true}
+      loop={true}
+      freeMode={true}
       pagination={{ clickable: true }}
-      scrollbar={{ draggable: true }}
       onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log('slide change')}
+      onSlideChange={() => console.log("slide change")}
     >
-      <SwiperSlide>Slide 1</SwiperSlide>
-      <SwiperSlide>Slide 2</SwiperSlide>
-      <SwiperSlide>Slide 3</SwiperSlide>
-      <SwiperSlide>Slide 4</SwiperSlide>
+      <SwiperSlide>
+        {({ isActive }) => (
+          <div
+            className={
+              isActive
+                ? `bg-[#75b8c880] h-[253px] flex justify-center items-center`
+                : `bg-[#A1C5CF] h-[179px] flex justify-center items-center`
+            }
+          >
+            Current slide is {isActive ? "active" : "not active"}
+          </div>
+        )}
+      </SwiperSlide>
+      <SwiperSlide>
+        {({ isActive }) => (
+          <div
+            className={
+              isActive
+                ? `bg-[#75b8c880] h-[253px] flex justify-center items-center`
+                : `bg-[#A1C5CF] h-[179px] flex justify-center items-center`
+            }
+          >
+            Current slide is {isActive ? "active" : "not active"}
+          </div>
+        )}
+      </SwiperSlide>
+      <SwiperSlide>
+        {({ isActive }) => (
+          <div
+            className={
+              isActive
+                ? `bg-[#75b8c880] h-[253px] flex justify-center items-center`
+                : `bg-[#A1C5CF] h-[179px] flex justify-center items-center`
+            }
+          >
+            Current slide is {isActive ? "active" : "not active"}
+          </div>
+        )}
+      </SwiperSlide>
     </Swiper>
   );
 };
