@@ -20,16 +20,16 @@ const SignIn = () => {
           </div>
           <div className='flex flex-col mb-4'>
             <label htmlFor='username' className='text-[24px] mb-4'>Username</label>
-            <input type="text" name="username" id="username" placeholder='Enter your username' />
+            <input className='bg-[#D9D9D921] border border-[#D9D9D9] rounded-lg py-1 px-2' type="text" name="username" id="username" placeholder='Enter your username' />
           </div>
           <div className='flex flex-col'>
             <label htmlFor='password' className='text-[24px] mb-4'>Password</label>
-            <input type="password" name="password" id="password" placeholder='Enter your password' />
+            <input className='bg-[#D9D9D921] border border-[#D9D9D9] rounded-lg py-1 px-2 w-full' type="password" name="password" id="password" placeholder='Enter your password' />
           </div>
-          <div className='flex text-center justify-center text-tertiary my-4 underline'>
+          <div className='flex text-center justify-center text-tertiary my-6 underline'>
             <Link>Forgot Password?</Link>
           </div>
-          <div className='flex items-center'>
+          <div className='flex justify-center my-6'>
             <Button title="Sign In" path="sign-in" />
           </div>
         </div>

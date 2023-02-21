@@ -9,7 +9,7 @@ const Button = ({ path, title }) => {
       {pathname === "/sign-in" ? (
         <button
           type="submit"
-          className={`bg-[#09CEB4] text-white py-2 px-20 rounded hover:scale-125 transition duration-200`}
+          className={`bg-[#09CEB4] text-white py-2 px-24 rounded-xl hover:scale-125 transition duration-200`}
         >
           {title}
         </button>
