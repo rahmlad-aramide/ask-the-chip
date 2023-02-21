@@ -15,7 +15,7 @@ const Header = () => {
           found it hard to reconcile with.
         </h2>
         <div>
-            <Button path='sign-in' title='Sign In' px='12px' />
+            <Button path='sign-in' title='Sign In' />
         </div>
         </div>
         <div>

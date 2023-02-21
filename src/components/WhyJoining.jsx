@@ -1,5 +1,5 @@
 import React from 'react'
-import { whyData } from '../data/whyData'
+import { whyData } from '../data'
 import WhyCard from './WhyCard'
 
 const WhyJoining = () => {

@@ -7,12 +7,14 @@ module.exports = {
     colors: {
       'primary': '#4FD6C4',
       'secondary': '#021B38',
+      'tertiary': '#09CEB4',
       'white': '#ffffff',
       'transparent': '#ffffff00'
     },
     fontFamily: {
       'Montserrat': ['Montserrat', 'sans-serif'],
       'OpenSans': ['Open Sans', 'sans-serif'],
+      'Inter': ['Inter', 'sans-serif'],
     },
     extend: {},
   },
