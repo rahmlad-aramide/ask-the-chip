@@ -48,3 +48,14 @@ export const connectData = [
     },
     
 ]
+
+export const interestData = [
+    {
+        title: '🎨 Art',
+        icon: ''
+    },
+    {
+        title: '⛩️ Architecture',
+        icon: ''
+    }
+]
