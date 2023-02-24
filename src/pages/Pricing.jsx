@@ -123,7 +123,7 @@ const Pricing = () => {
                         Enter the 3-digit number at the back of your card
                       </h2>
                     </div>
-                    <div className="flex items-center bg-white border border-[#757575] rounded-lg px-2 mt-4 mb-6 max-w-[9ch]">
+                    <div className="flex items-center bg-white border border-[#757575] rounded-lg px-4 mt-4 mb-6 max-w-[12ch]">
                       <input
                         type="number"
                         name="cvv_no"
