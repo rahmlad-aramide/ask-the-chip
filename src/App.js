@@ -1,8 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import { LandingPage, Onboarding, Register, RegisterAsProvider, SignIn } from './pages';
-// import Onboarding from './pages/Onboarding';
-
+import { LandingPage, Onboarding, Pricing, Register, RegisterAsProvider, SignIn } from './pages';
 
 function App() {
   return (
@@ -13,6 +11,7 @@ function App() {
         <Route path='/register' element={<Register />} />
         <Route path='/register-as-provider' element={<RegisterAsProvider />} />
         <Route path='/onboarding' element={<Onboarding />} />
+        <Route path='/pricing' element={<Pricing />} />
       </Routes>
     </div>
   );

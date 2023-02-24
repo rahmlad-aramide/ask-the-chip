@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { interestData } from "../data";
 import logo from "./../assets/ask.svg";
+import { interestData } from "../data";
 
 import Button from "./../components/Button";
 
@@ -22,16 +22,16 @@ const Onboarding = () => {
             </div>
             <div>
                 <div>
-                    <button className="bg-[#2F2924] text-[#FDFBF9] rounded">
+                    <button className="bg-[#2F2924] text-[#FDFBF9] py-1 px-2 rounded">
                         <span>+</span>
                         Add a new interest
                     </button>
                 </div>
                 <div>
                     {interestData.map(interest=>(
-                       <button className="text-[#2F2924] bg-[#FDFBF9] rounded">
+                       <button className="text-[#2F2924] bg-[#FDFBF9] rounded px-2 py-1 border">
                            <span>+</span>
-                           Add a new interest
+                           {interest.title}
                        </button>
                     ))}
                 </div>
@@ -53,7 +53,7 @@ const Onboarding = () => {
             </div>
           </div>
         </div>
-        <div className="w-[50%] hidden md:flex bg-handBulb bg-right-bottom bg-no-repeat bg-cover h-screen">
+        <div className="w-[50%] hidden md:flex bg-handBulb bg-center bg-no-repeat bg-cover h-screen">
         </div>
       </div>
     </div>
