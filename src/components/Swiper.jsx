@@ -31,14 +31,16 @@ export default () => {
     >
       <SwiperSlide>
         {({ isActive }) => (
-          <div
-            className={
-              isActive
-                ? `bg-[#75b8c880] h-[253px] flex justify-center items-center`
-                : `bg-[#A1C5CF] h-[179px] flex justify-center items-center`
-            }
-          >
-            Current slide is {isActive ? "active" : "not active"}
+          <div className="mb-10">
+            <div
+              className={
+                isActive
+                  ? `bg-[#75b8c880] h-[253px] flex justify-center items-center`
+                  : `bg-[#A1C5CF] h-[179px] flex justify-center items-center`
+              }
+            >
+              Current slide is {isActive ? "active" : "not active"} ipsum dolor sit amet consectetur, adipisicing elit. Itaque suscipit repellendus magni illum quidem! Minima voluptate quo similique incidunt quibusdam.
+            </div>
           </div>
         )}
       </SwiperSlide>

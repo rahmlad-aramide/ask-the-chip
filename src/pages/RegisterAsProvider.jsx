@@ -1,25 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "./../assets/ask.svg";
-// import background from './../assets/images/hand-bulb.svg';
 
 import Button from "./../components/Button";
 
-const Register = () => {
+const RegisterAsProvider = () => {
   return (
     <div className="min-h-screen font-Inter">
-      <div className="flex flex-col md:flex-row h-screen">
-        <div className="w-[50%] h-screen overflow-y-auto">
+      <div className="flex flex-col md:flex-row h-full md:h-screen">
+        <div className="w-full md:w-[50%] h-screen overflow-y-auto">
           <div className="h-16">
             <Link to="/">
               <img src={logo} alt="Ask the chip" />
             </Link>
           </div>
           <div className="max-w-[600px] flex flex-col justify-center items-center ml-8 my-8">
-            <div className="flex items-start w-full">
-              <h1 className="font-Inter text-[32px] mb-8">Register</h1>
+            <div className="flex items-start w-[90%]">
+              <h1 className="font-Inter text-[32px] mb-8">Register as a service provider</h1>
             </div>
-            <div className="flex flex-col mb-4 w-full">
+            <div className="grid grid-cols-1 w-[90%] mb-4">
               <label htmlFor="email" className="text-[24px] mb-4">
                 Email
               </label>
@@ -31,7 +30,7 @@ const Register = () => {
                 placeholder="Enter your email"
               />
             </div>
-            <div className="flex flex-col w-full mb-4">
+            <div className="grid grid-cols-1 w-[90%] mb-4">
               <label htmlFor="password" className="text-[24px] mb-4">
                 Password
               </label>
@@ -43,29 +42,29 @@ const Register = () => {
                 placeholder="Enter your password"
               />
             </div>
-            <div className="flex flex-col w-full mb-4">
-              <label htmlFor="account_type" className="text-[24px] mb-4">
-                Select account type
+            <div className="grid grid-cols-1 w-[90%] mb-4">
+              <label htmlFor="service_type" className="text-[24px] mb-4">
+                Service type
               </label>
-              <select className="bg-[#D9D9D921] outline-none border border-[#D9D9D9] rounded-lg py-1 px-2 w-[90%]" id="account_type" name="account_type">
-                <option>Entrepreneur</option>
-                <option>Investor</option>
-                <option>Entrepreneur/Investor</option>
+              <select className="bg-[#D9D9D921] outline-none border border-[#D9D9D9] rounded-lg py-1 px-2 w-[90%]" id="service_type" name="service_type">
+                <option>Accounting services</option>
+                <option>Financial services</option>
+                <option>Legal services</option>
               </select>
             </div>
-            <div className="flex flex-col w-full mb-4">
+            <div className="grid grid-cols-1 w-[90%] mb-4">
               <label htmlFor="full_name" className="text-[24px] mb-4">
-                Full name
+                Company name
               </label>
               <input
                 className="bg-[#D9D9D921] outline-none border border-[#D9D9D9] rounded-lg py-1 px-2 w-[90%]"
                 type="text"
                 name="full_name"
                 id="full_name"
-                placeholder="Enter your full name"
+                placeholder="Enter your company name"
               />
             </div>
-            <div className="flex flex-col w-full mb-4">
+            <div className="grid grid-cols-1 w-[90%] mb-4">
               <label htmlFor="phone_no" className="text-[24px] mb-4">
                 Phone number
               </label>
@@ -76,6 +75,44 @@ const Register = () => {
                 id="phone_no"
                 placeholder="Enter your phone number"
               />
+            </div>
+            <div className="grid grid-cols-1 w-[90%] mb-4">
+              <label htmlFor="address" className="text-[24px] mb-4">
+                Office address
+              </label>
+              <input
+                className="bg-[#D9D9D921] outline-none border border-[#D9D9D9] rounded-lg py-1 px-2 w-[90%]"
+                type="text"
+                name="address"
+                id="address"
+                placeholder="Enter your office address"
+              />
+            </div>
+            <div className="grid grid-cols-2 w-[85%] gap-2 -ml-[5%] mb-4">
+              <div>
+                <label htmlFor="cac_certificate" className="text-[24px] mb-4">
+                  CAC Certificate
+                </label>
+                <input
+                  className="bg-[#D9D9D921] outline-none border border-[#D9D9D9] rounded-lg py-1 px-2 w-[90%]"
+                  type="file"
+                  name="cac_certificate"
+                  id="cac_certificate"
+                  placeholder="Upload your CAC Certificate"
+                  />
+              </div>
+              <div>
+                <label htmlFor="rep_id" className="text-[24px] mb-4">
+                  Representative ID
+                </label>
+                <input
+                  className="bg-[#D9D9D921] outline-none border border-[#D9D9D9] rounded-lg py-1 px-2 w-[90%]"
+                  type="file"
+                  name="rep_id"
+                  id="rep_id"
+                  placeholder="Upload your Representative ID"
+                  />
+              </div>
             </div>
             <div className="flex justify-center mt-4 mb-2">
               <p className="max-w-[41ch]">
@@ -94,14 +131,11 @@ const Register = () => {
             </div>
           </div>
         </div>
-        <div className="w-[50%] bg-handBulb bg-right-bottom bg-no-repeat bg-cover h-screen">
-          {/* <div className="w-full flex justify-end items-center">
-            <img src={background} alt="People on globe" className='max-h-[80vh] w-full' />
-          </div> */}
+        <div className="w-[50%] hidden md:flex bg-handBulb bg-right-bottom bg-no-repeat bg-cover h-screen">
         </div>
       </div>
     </div>
   );
 };
 
-export default Register;
+export default RegisterAsProvider;

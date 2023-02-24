@@ -16,6 +16,9 @@ module.exports = {
       'OpenSans': ['Open Sans', 'sans-serif'],
       'Inter': ['Inter', 'sans-serif'],
     },
+    backgroundImage: {
+      'handBulb': "url(./assets/images/hand-bulb.svg)"
+    },
     extend: {},
   },
   plugins: [],
