@@ -11,8 +11,6 @@ module.exports = {
       'white': '#ffffff',
       'transparent': '#ffffff00',
       'smoke': '#F7F9FA',
-      'link': ' #0F1419',
-      'share': '#5B7083'
     },
     fontFamily: {
       'Montserrat': ['Montserrat', 'sans-serif'],

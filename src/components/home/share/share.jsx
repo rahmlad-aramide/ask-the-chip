@@ -1,4 +1,4 @@
-import profileImg from "../../assets/Medium.png";
+import profileImg from "../../../assets/Medium.png";
 
 export const Share = () => {
   return (
