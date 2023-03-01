@@ -16,8 +16,8 @@ import "swiper/css/free-mode";
 
 //eslint-disable-next-line
 export default () => {
-  const windowWidth = useRef([window.innerWidth]);
-  consol
+//   const windowWidth = useRef([window.innerWidth]);
+//   consol
   return (
     <Swiper
       // install Swiper modules
