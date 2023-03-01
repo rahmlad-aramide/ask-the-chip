@@ -1,6 +1,6 @@
 // import Swiper core and required modules
 import { Navigation, Pagination } from "swiper";
-import { useRef } from "react";
+// import { useRef } from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
